@@ -1,0 +1,14 @@
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\bin\Debug\Online Shopping Store.exe.config
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\bin\Debug\Online Shopping Store.exe
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\bin\Debug\Online Shopping Store.pdb
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\obj\Debug\Online_Shopping_Store.Form1.resources
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\obj\Debug\Online_Shopping_Store.Form2.resources
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\obj\Debug\Online_Shopping_Store.Form3.resources
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\obj\Debug\Online_Shopping_Store.Form4.resources
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\obj\Debug\Online_Shopping_Store.Properties.Resources.resources
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\obj\Debug\Online Shopping Store.csproj.GenerateResource.Cache
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\obj\Debug\Online Shopping Store.csproj.CoreCompileInputs.cache
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\obj\Debug\Online Shopping Store.exe
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\obj\Debug\Online Shopping Store.pdb
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\obj\Debug\Online Shopping Store.csprojResolveAssemblyReference.cache
+E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\obj\Debug\Online_Shopping_Store.Form5.resources
