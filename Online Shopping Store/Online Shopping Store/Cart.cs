@@ -55,14 +55,17 @@ namespace Online_Shopping_Store
             Dictionary<string, List<Cart>> d = ReadFromFile();
             if (quantity > p.quantity)
                 return false;
-            for (int i = 0; i < d[uemail].Count; i++)
+            if(d.ContainsKey(uemail))
             {
-                if (d[uemail][i].name == p.name)
+                for (int i = 0; i < d[uemail].Count; i++)
                 {
-                    d[uemail][i].quantity += quantity;
-                    Update(d);
-                    p.quantity -= quantity;
-                    return true;
+                    if (d[uemail][i].name == p.name)
+                    {
+                        d[uemail][i].quantity += quantity;
+                        Update(d);
+                        p.quantity -= quantity;
+                        return true;
+                    }
                 }
             }
             name = p.name;

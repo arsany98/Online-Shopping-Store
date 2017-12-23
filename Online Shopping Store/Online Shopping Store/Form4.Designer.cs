@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.categorylbl = new System.Windows.Forms.Label();
@@ -49,6 +50,11 @@
             this.imagein = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Pimage = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Pbrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pquantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.add = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -89,11 +95,7 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.Pimage = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Pbrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pquantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.quantityin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -130,6 +132,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(24, 24);
             this.button2.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.button2, "Delete Product");
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -311,14 +314,14 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Pimage,
@@ -326,14 +329,14 @@
             this.Pname,
             this.Pprice,
             this.Pquantity});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.OliveDrab;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.OliveDrab;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Location = new System.Drawing.Point(0, 49);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -347,6 +350,46 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(654, 414);
             this.dataGridView1.TabIndex = 4;
+            // 
+            // Pimage
+            // 
+            this.Pimage.Frozen = true;
+            this.Pimage.HeaderText = "Image";
+            this.Pimage.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Pimage.Name = "Pimage";
+            this.Pimage.ReadOnly = true;
+            this.Pimage.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Pbrand
+            // 
+            this.Pbrand.HeaderText = "Brand";
+            this.Pbrand.Name = "Pbrand";
+            this.Pbrand.ReadOnly = true;
+            this.Pbrand.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Pbrand.Width = 150;
+            // 
+            // Pname
+            // 
+            this.Pname.HeaderText = "Name";
+            this.Pname.Name = "Pname";
+            this.Pname.ReadOnly = true;
+            this.Pname.Width = 300;
+            // 
+            // Pprice
+            // 
+            dataGridViewCellStyle2.Format = "0.00 EGP";
+            dataGridViewCellStyle2.NullValue = null;
+            this.Pprice.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Pprice.HeaderText = "Price";
+            this.Pprice.Name = "Pprice";
+            this.Pprice.ReadOnly = true;
+            this.Pprice.Width = 150;
+            // 
+            // Pquantity
+            // 
+            this.Pquantity.HeaderText = "Quantity";
+            this.Pquantity.Name = "Pquantity";
+            this.Pquantity.ReadOnly = true;
             // 
             // panel1
             // 
@@ -843,6 +886,7 @@
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(24, 24);
             this.button14.TabIndex = 20;
+            this.toolTip1.SetToolTip(this.button14, "Logout");
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
@@ -858,6 +902,7 @@
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(24, 24);
             this.button13.TabIndex = 19;
+            this.toolTip1.SetToolTip(this.button13, "Profile");
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
@@ -873,6 +918,7 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(24, 24);
             this.button12.TabIndex = 18;
+            this.toolTip1.SetToolTip(this.button12, "Exit");
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
@@ -889,6 +935,7 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(24, 24);
             this.button15.TabIndex = 14;
+            this.toolTip1.SetToolTip(this.button15, "Home");
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
@@ -906,48 +953,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(24, 24);
             this.button1.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.button1, "Add Product");
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Pimage
-            // 
-            this.Pimage.Frozen = true;
-            this.Pimage.HeaderText = "Image";
-            this.Pimage.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Pimage.Name = "Pimage";
-            this.Pimage.ReadOnly = true;
-            this.Pimage.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Pbrand
-            // 
-            this.Pbrand.HeaderText = "Brand";
-            this.Pbrand.Name = "Pbrand";
-            this.Pbrand.ReadOnly = true;
-            this.Pbrand.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Pbrand.Width = 150;
-            // 
-            // Pname
-            // 
-            this.Pname.HeaderText = "Name";
-            this.Pname.Name = "Pname";
-            this.Pname.ReadOnly = true;
-            this.Pname.Width = 300;
-            // 
-            // Pprice
-            // 
-            dataGridViewCellStyle8.Format = "0.00 EGP";
-            dataGridViewCellStyle8.NullValue = null;
-            this.Pprice.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Pprice.HeaderText = "Price";
-            this.Pprice.Name = "Pprice";
-            this.Pprice.ReadOnly = true;
-            this.Pprice.Width = 150;
-            // 
-            // Pquantity
-            // 
-            this.Pquantity.HeaderText = "Quantity";
-            this.Pquantity.Name = "Pquantity";
-            this.Pquantity.ReadOnly = true;
             // 
             // Form4
             // 
@@ -964,9 +972,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.homepnl);
             this.Controls.Add(this.profilepnl);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form4";
             this.Text = "Online Shopping Store";
@@ -1054,5 +1062,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Pname;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pprice;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pquantity;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

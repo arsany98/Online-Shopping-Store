@@ -85,6 +85,7 @@
             // 
             this.Uregister.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Uregister.BackColor = System.Drawing.Color.SeaGreen;
+            this.Uregister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Uregister.FlatAppearance.BorderSize = 0;
             this.Uregister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Uregister.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -131,6 +132,7 @@
             this.emaillbl.Size = new System.Drawing.Size(114, 20);
             this.emaillbl.TabIndex = 8;
             this.emaillbl.Text = "Email Address*";
+            this.toolTip1.SetToolTip(this.emaillbl, "Enter a valid Email Address");
             // 
             // Email
             // 
@@ -205,6 +207,7 @@
             this.Password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Password.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Password.Location = new System.Drawing.Point(60, 156);
+            this.Password.MaxLength = 32;
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(233, 26);
             this.Password.TabIndex = 3;
@@ -222,6 +225,7 @@
             this.remaillbl.Size = new System.Drawing.Size(179, 20);
             this.remaillbl.TabIndex = 16;
             this.remaillbl.Text = "Re-Enter Email Address*";
+            this.toolTip1.SetToolTip(this.remaillbl, "Emails must match");
             // 
             // REmail
             // 
@@ -285,12 +289,14 @@
             this.rpwlbl.Size = new System.Drawing.Size(150, 20);
             this.rpwlbl.TabIndex = 21;
             this.rpwlbl.Text = "Re-Enter Password*";
+            this.toolTip1.SetToolTip(this.rpwlbl, "Password must match");
             // 
             // RPassword
             // 
             this.RPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RPassword.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RPassword.Location = new System.Drawing.Point(299, 156);
+            this.RPassword.MaxLength = 32;
             this.RPassword.Name = "RPassword";
             this.RPassword.Size = new System.Drawing.Size(233, 26);
             this.RPassword.TabIndex = 4;
@@ -347,6 +353,7 @@
             // 
             this.Ucancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Ucancel.BackColor = System.Drawing.Color.SeaGreen;
+            this.Ucancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Ucancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Ucancel.FlatAppearance.BorderSize = 0;
             this.Ucancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -364,6 +371,7 @@
             // 
             this.Sregister.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Sregister.BackColor = System.Drawing.Color.SeaGreen;
+            this.Sregister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Sregister.FlatAppearance.BorderSize = 0;
             this.Sregister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sregister.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -447,6 +455,7 @@
             this.ccrdlbl.Size = new System.Drawing.Size(101, 20);
             this.ccrdlbl.TabIndex = 24;
             this.ccrdlbl.Text = "Credit Card*";
+            this.toolTip1.SetToolTip(this.ccrdlbl, "Credit Card Must Contain 16 character");
             // 
             // tabPage2
             // 
@@ -498,6 +507,7 @@
             this.Sccrdlbl.Size = new System.Drawing.Size(101, 20);
             this.Sccrdlbl.TabIndex = 47;
             this.Sccrdlbl.Text = "Credit Card*";
+            this.toolTip1.SetToolTip(this.Sccrdlbl, "Credit Card Must Contain 16 character");
             // 
             // Snamelbl
             // 
@@ -516,6 +526,7 @@
             // 
             this.Scancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Scancel.BackColor = System.Drawing.Color.SeaGreen;
+            this.Scancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Scancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Scancel.FlatAppearance.BorderSize = 0;
             this.Scancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -559,6 +570,7 @@
             this.Semaillbl.Size = new System.Drawing.Size(114, 20);
             this.Semaillbl.TabIndex = 35;
             this.Semaillbl.Text = "Email Address*";
+            this.toolTip1.SetToolTip(this.Semaillbl, "Enter a valid Email Address");
             // 
             // Saddress
             // 
@@ -623,6 +635,7 @@
             this.Srpw.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Srpw.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Srpw.Location = new System.Drawing.Point(323, 212);
+            this.Srpw.MaxLength = 32;
             this.Srpw.Name = "Srpw";
             this.Srpw.Size = new System.Drawing.Size(233, 26);
             this.Srpw.TabIndex = 4;
@@ -633,6 +646,7 @@
             this.Spw.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Spw.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Spw.Location = new System.Drawing.Point(84, 212);
+            this.Spw.MaxLength = 32;
             this.Spw.Name = "Spw";
             this.Spw.Size = new System.Drawing.Size(233, 26);
             this.Spw.TabIndex = 3;
@@ -650,6 +664,7 @@
             this.Spwlbl.Size = new System.Drawing.Size(85, 20);
             this.Spwlbl.TabIndex = 42;
             this.Spwlbl.Text = "Password*";
+            this.toolTip1.SetToolTip(this.Spwlbl, "Password Must Contain at Least 6 Characters");
             // 
             // Sremail
             // 

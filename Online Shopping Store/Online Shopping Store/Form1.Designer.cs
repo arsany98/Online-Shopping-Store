@@ -43,6 +43,7 @@
             // 
             this.login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.login.BackColor = System.Drawing.Color.SeaGreen;
+            this.login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login.FlatAppearance.BorderSize = 0;
             this.login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -115,6 +116,7 @@
             // 
             this.register.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.register.BackColor = System.Drawing.Color.SeaGreen;
+            this.register.Cursor = System.Windows.Forms.Cursors.Hand;
             this.register.FlatAppearance.BorderSize = 0;
             this.register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.register.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -141,7 +143,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(24, 24);
             this.button3.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.button3, "Close");
+            this.toolTip1.SetToolTip(this.button3, "Exit");
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 

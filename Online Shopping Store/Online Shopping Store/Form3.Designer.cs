@@ -28,17 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Pimage = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Pbrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
@@ -82,20 +87,17 @@
             this.deletecart = new System.Windows.Forms.Button();
             this.totallbl = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Pimage = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Pbrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cimage = new System.Windows.Forms.DataGridViewImageColumn();
             this.Cproduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CunitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cquantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ctotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -165,6 +167,39 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(649, 414);
             this.dataGridView1.TabIndex = 3;
+            // 
+            // Pimage
+            // 
+            this.Pimage.HeaderText = "Image";
+            this.Pimage.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Pimage.Name = "Pimage";
+            this.Pimage.ReadOnly = true;
+            this.Pimage.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Pbrand
+            // 
+            this.Pbrand.HeaderText = "Brand";
+            this.Pbrand.Name = "Pbrand";
+            this.Pbrand.ReadOnly = true;
+            this.Pbrand.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Pbrand.Width = 150;
+            // 
+            // Pname
+            // 
+            this.Pname.HeaderText = "Name";
+            this.Pname.Name = "Pname";
+            this.Pname.ReadOnly = true;
+            this.Pname.Width = 300;
+            // 
+            // Pprice
+            // 
+            dataGridViewCellStyle2.Format = "0.00 EGP";
+            dataGridViewCellStyle2.NullValue = null;
+            this.Pprice.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Pprice.HeaderText = "Price";
+            this.Pprice.Name = "Pprice";
+            this.Pprice.ReadOnly = true;
+            this.Pprice.Width = 150;
             // 
             // button2
             // 
@@ -724,6 +759,7 @@
             this.deletecart.Name = "deletecart";
             this.deletecart.Size = new System.Drawing.Size(24, 24);
             this.deletecart.TabIndex = 50;
+            this.toolTip1.SetToolTip(this.deletecart, "Remove Product");
             this.deletecart.UseVisualStyleBackColor = false;
             this.deletecart.Click += new System.EventHandler(this.deletecart_Click);
             // 
@@ -794,115 +830,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(649, 464);
             this.dataGridView2.TabIndex = 48;
             // 
-            // button18
-            // 
-            this.button18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button18.BackgroundImage = global::Online_Shopping_Store.Properties.Resources.HomeIcon;
-            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Location = new System.Drawing.Point(1016, 16);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(24, 24);
-            this.button18.TabIndex = 96;
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
-            // 
-            // button14
-            // 
-            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(923, 16);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(24, 24);
-            this.button14.TabIndex = 13;
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button13
-            // 
-            this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(985, 16);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(24, 24);
-            this.button13.TabIndex = 12;
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // button12
-            // 
-            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(1047, 16);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(24, 24);
-            this.button12.TabIndex = 11;
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(954, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(24, 24);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Pimage
-            // 
-            this.Pimage.HeaderText = "Image";
-            this.Pimage.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Pimage.Name = "Pimage";
-            this.Pimage.ReadOnly = true;
-            this.Pimage.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Pbrand
-            // 
-            this.Pbrand.HeaderText = "Brand";
-            this.Pbrand.Name = "Pbrand";
-            this.Pbrand.ReadOnly = true;
-            this.Pbrand.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Pbrand.Width = 150;
-            // 
-            // Pname
-            // 
-            this.Pname.HeaderText = "Name";
-            this.Pname.Name = "Pname";
-            this.Pname.ReadOnly = true;
-            this.Pname.Width = 300;
-            // 
-            // Pprice
-            // 
-            dataGridViewCellStyle2.Format = "0.00 EGP";
-            dataGridViewCellStyle2.NullValue = null;
-            this.Pprice.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Pprice.HeaderText = "Price";
-            this.Pprice.Name = "Pprice";
-            this.Pprice.ReadOnly = true;
-            this.Pprice.Width = 150;
-            // 
             // Cimage
             // 
             this.Cimage.HeaderText = "Image";
@@ -943,6 +870,87 @@
             this.Ctotal.Name = "Ctotal";
             this.Ctotal.ReadOnly = true;
             // 
+            // button18
+            // 
+            this.button18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button18.BackgroundImage = global::Online_Shopping_Store.Properties.Resources.HomeIcon;
+            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button18.FlatAppearance.BorderSize = 0;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Location = new System.Drawing.Point(1016, 16);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(24, 24);
+            this.button18.TabIndex = 96;
+            this.toolTip1.SetToolTip(this.button18, "Home");
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button14
+            // 
+            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(923, 16);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(24, 24);
+            this.button14.TabIndex = 13;
+            this.toolTip1.SetToolTip(this.button14, "Logout");
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button13
+            // 
+            this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(985, 16);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(24, 24);
+            this.button13.TabIndex = 12;
+            this.toolTip1.SetToolTip(this.button13, "Profile");
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button12
+            // 
+            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(1047, 16);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(24, 24);
+            this.button12.TabIndex = 11;
+            this.toolTip1.SetToolTip(this.button12, "Exit");
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(954, 16);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(24, 24);
+            this.button1.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.button1, "Cart");
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -958,9 +966,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.cartpnl);
             this.Controls.Add(this.homepnl);
             this.Controls.Add(this.profilepnl);
+            this.Controls.Add(this.cartpnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form3";
@@ -1045,5 +1053,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CunitPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cquantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ctotal;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
