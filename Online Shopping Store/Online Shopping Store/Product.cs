@@ -23,7 +23,10 @@ namespace Online_Shopping_Store
             quantity = int.Parse(s[3]);
             category = s[4];
             imagePath = s[5];
-            image = Image.FromFile(imagePath);
+            if(File.Exists(imagePath))
+            {
+                image = Image.FromFile(imagePath);
+            }
             shop = s[6];
         }
         public List<Product> ReadFromFile()

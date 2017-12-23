@@ -23,7 +23,8 @@ namespace Online_Shopping_Store
             quantity = int.Parse(s[2]);
             unitprice = float.Parse(s[3]);
             imagePath = s[4];
-            image = Image.FromFile(s[4]);
+            if(File.Exists(imagePath))
+                image = Image.FromFile(s[4]);
             total = quantity * unitprice;
         }
         public Dictionary<string,List<Cart>>ReadFromFile()
@@ -51,8 +52,19 @@ namespace Online_Shopping_Store
         }
         public bool Add(Product p)
         {
+            Dictionary<string, List<Cart>> d = ReadFromFile();
             if (quantity > p.quantity)
                 return false;
+            for (int i = 0; i < d[uemail].Count; i++)
+            {
+                if (d[uemail][i].name == p.name)
+                {
+                    d[uemail][i].quantity += quantity;
+                    Update(d);
+                    p.quantity -= quantity;
+                    return true;
+                }
+            }
             name = p.name;
             unitprice = p.price;
             imagePath = p.imagePath;

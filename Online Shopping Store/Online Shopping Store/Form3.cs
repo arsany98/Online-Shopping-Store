@@ -193,7 +193,7 @@ namespace Online_Shopping_Store
                     t += d[em][i].total;
                 }
             }
-            totallbl.Text = "Total: " + t.ToString("C2");
+            totallbl.Text = "Total: " + t.ToString("0.00 EGP");
             cartpnl.BringToFront();
         }
         private void deletecart_Click(object sender, EventArgs e)
@@ -222,7 +222,7 @@ namespace Online_Shopping_Store
         private void button15_Click(object sender, EventArgs e)
         {
             Form3_Load(sender, e);
-            c.DeleteAll(user.email);
+            //c.DeleteAll(user.email);
             Form5 f = new Form5(d[user.email],t);
             f.ShowDialog();
         }

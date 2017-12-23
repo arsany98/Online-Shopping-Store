@@ -23,6 +23,7 @@ namespace Online_Shopping_Store
         {
             label1.Text = "Hello, " + shop.name;
             l = p.ReadFromFile();
+            dataGridView1.Rows.Clear();
             for (int i = 0; i < l.Count; i++)
             {
                 if (l[i].shop == shop.name)
@@ -47,6 +48,7 @@ namespace Online_Shopping_Store
                 {
                     string productname = dataGridView1.SelectedRows[0].Cells["Pname"].Value.ToString();
                     p.Delete(productname);
+                    Form4_Load(sender, e);
                     MessageBox.Show("Product has been deleted Succesfully.");
                 }
             }
@@ -157,8 +159,9 @@ namespace Online_Shopping_Store
                 for (int i = 0; i < l.Count; i++)
                     if (l[i].name == productname)
                     {
-                        l[i].quantity = int.Parse(numericUpDown1.Text);
-                        l[i].price = float.Parse(priceupdate.Text);
+                        l[i].quantity += int.Parse(numericUpDown1.Text);
+                        if(priceupdate.Text!="")
+                            l[i].price = float.Parse(priceupdate.Text);
                         break;
                     }
                 p.Update(l);
@@ -173,6 +176,7 @@ namespace Online_Shopping_Store
             if (productcheck())
             {
                 p.WriteToFile();
+                l = p.ReadFromFile();
                 MessageBox.Show("Product has been added Successfully");
             }
         }

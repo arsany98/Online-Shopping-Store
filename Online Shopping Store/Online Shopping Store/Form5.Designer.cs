@@ -79,8 +79,10 @@
             this.ClientSize = new System.Drawing.Size(886, 546);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.printPreviewControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form5";
-            this.Text = "Form5";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Receipt";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
 

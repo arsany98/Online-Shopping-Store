@@ -34,7 +34,7 @@ namespace Online_Shopping_Store
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
             Graphics g = e.Graphics;
-            Font f = new Font("Century Gothic",16);
+            Font f = new Font("Century Gothic",14);
             SolidBrush b = new SolidBrush(Color.Black);
             float fh = f.Height;
             g.DrawString("Online Shopping Store\n", new Font("Century Gothic", 24,FontStyle.Bold), b, 25, 10);
@@ -42,14 +42,14 @@ namespace Online_Shopping_Store
 
             float x = 20;
             float y = 180;
-            g.DrawString("Name\t\t\t\t\t\tQ.\tUnit\tTotal", f, b, x, y);
-            y += fh + 10;
+            g.DrawString("Name\t\t\t\t\t\tQ.\tUnit\tTotal", new Font("Century Gothic",16,FontStyle.Bold), b, x, y);
+            y +=40;
             for (int i = 0; i < l.Count; i++)
             {
-                string st=null;
-                for (int j = l[i].name.Length/6; j < 7; j++)
-                    st += "\t";
-                g.DrawString(l[i].name+st+l[i].quantity+"\t"+l[i].unitprice+"\t"+l[i].total, f, b, x, y);
+                g.DrawString(l[i].name, f, b, x, y);
+                g.DrawString(l[i].quantity.ToString(), f, b, x+540, y);
+                g.DrawString(l[i].unitprice.ToString(), f, b, x+620, y);
+                g.DrawString(l[i].total.ToString(), f, b, x+710, y);
                 y += fh + 10;
             }
             g.DrawString("Total: "+ total.ToString("C2") , f, b, 600, y+100);

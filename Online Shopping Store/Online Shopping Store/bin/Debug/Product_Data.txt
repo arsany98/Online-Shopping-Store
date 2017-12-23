@@ -1,2 +1,19 @@
-ideapad 500 core i5;lenovo;6000;6;Laptops & PCs;C:\Users\user\Downloads\item_XXL_9971188_12081238.jpg;qwer
-inspiron 5000 core i7;dell;8000;9;Laptops & PCs;C:\Users\user\Downloads\item_XXL_12014093_18001720.jpg;qwer
+laptop lenovo;1st;8000;1;Laptops & PCs;C:\Users\El-huda\Desktop\zft\download (1).jpg;ahmed
+Dell;1st;10000;0;Laptops & PCs;C:\Users\El-huda\Desktop\zft\download.jpg;ahmed
+shoe;1st;200;1;Men's Fashion;C:\Users\El-huda\Desktop\zft\download (2).jpg;ahmed
+electric clippers;1st;650;1;Men's Fashion;C:\Users\El-huda\Desktop\zft\ElectricClippers.jpg;ahmed
+makeuptools-;1st;1500;1;Women's Fashion;C:\Users\El-huda\Desktop\zft\makeuptools-909x1024.jpg;ahmed
+hand bag;1st;600;1;Women's Fashion;C:\Users\El-huda\Desktop\zft\91kXFcMK0wL._UL1500_.jpg;ahmed
+espresso-machine;1st;3200;1;Home Machines;C:\Users\El-huda\Desktop\zft\the-10-best-espresso-machines-you-can-buy-for-your-home.jpg;ahmed
+front load washer;1st;7300;1;Home Machines;C:\Users\El-huda\Desktop\zft\front-load-washer.jpg;ahmed
+Samsung J7 ;1st;4600;1;Mobiles & Tablets;C:\Users\El-huda\Desktop\zft\images.jpg;ahmed
+Samsung tablet;1st;7000;1;Mobiles & Tablets;C:\Users\El-huda\Desktop\zft\10451069.jpg;ahmed
+hotdog;1st;36;1;Super Market;C:\Users\El-huda\Desktop\zft\A32110.jpg;ahmed
+al_osra sugar;1st;12;1;Super Market;C:\Users\El-huda\Desktop\zft\item_XL_12142990_18377208.jpg;ahmed
+sporting suit;1st;230;1;Super Market;C:\Users\El-huda\Desktop\HTB1hReHHpXXXXa9apXXq6xXFXXX6.jpg;ahmed
+bicycle;1st;1700;1;Sports;C:\Users\El-huda\Desktop\c5e2113c-6b1c-47cf-881d-069aa57ca3c7_1.b1ab73d731f70d58e7876dc08b0ce1e2.jpeg;ahmed
+sporting suit;1st;230;1;Sports;C:\Users\El-huda\Desktop\HTB1hReHHpXXXXa9apXXq6xXFXXX6.jpg;ahmed
+storm football;1st;500;1;Sports;C:\Users\El-huda\Desktop\51WY4FrvELL._SY355_.jpg;ahmed
+LG 49LJ510V - 49-inch Full HD LED TV;LG;7744;10;TVs & Gaming;E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\bin\Debug\Pictures\1.jpg;arsany
+Samsung HG40AE460SK - 40-inch Full HD LE;Samsung;5799;8;TVs & Gaming;E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\bin\Debug\Pictures\2.jpg;arsany
+Sony PlayStation 4 Slim - 500GB - Black;Sony;6666;10;TVs & Gaming;E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\bin\Debug\Pictures\ps4.jpg;arsany

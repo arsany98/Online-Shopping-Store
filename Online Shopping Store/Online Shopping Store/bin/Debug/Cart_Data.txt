@@ -1,2 +1,6 @@
-asdf@;ideapad 500 core i5;1;6000;C:\Users\user\Downloads\item_XXL_9971188_12081238.jpg
-asdf@;inspiron 5000 core i7;1;8000;C:\Users\user\Downloads\item_XXL_12014093_18001720.jpg
+ahmedmosaad491@gmail.com;fifa 2018;1;470;C:\Users\El-huda\Desktop\s-l300.jpg
+arsanymaged13@gmail.com;laptop lenovo;1;8000;C:\Users\El-huda\Desktop\zft\download (1).jpg
+arsanymaged13@gmail.com;Dell;1;10000;C:\Users\El-huda\Desktop\zft\download.jpg
+arsanymaged13@gmail.com;Dell;1;10000;C:\Users\El-huda\Desktop\zft\download.jpg
+arsanymaged13@gmail.com;front load washer;1;7300;C:\Users\El-huda\Desktop\zft\front-load-washer.jpg
+arsanymaged13@gmail.com;Samsung HG40AE460SK - 40-inch Full HD LE;2;5799;E:\Projects\Visual Studio\Online Shopping Store\Online Shopping Store\bin\Debug\Pictures\2.jpg
